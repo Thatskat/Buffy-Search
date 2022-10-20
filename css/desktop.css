@@ -1,0 +1,157 @@
+/* ROOT VARIABLES */
+:root {
+  --main-dark: #1e293b;
+  --main-light: #e4e4e7;
+  --hover-blue: #64748b;
+}
+/* CSS RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* CANVAS COLOR CHANGE CSS */
+#Granim {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* BTN */
+.btn {
+  background-color: var(--main-dark);
+  color: var(--main-light);
+}
+.btn:hover {
+  background-color: var(--hover-blue);
+  color: var(--main-dark);
+}
+/* NAVBAR */
+.navbar {
+  background-color: var(--main-dark);
+}
+.navbar .navbar-nav .nav-item a {
+  color: var(--main-light);
+  transition: all 0.5s ease-in-out;
+}
+.navbar .navbar-nav .nav-item a:hover {
+  transform: scale(1.02);
+}
+.navbar .navbar-brand{
+  font-family: 'buffied', sans-serif !important;
+  color: var(--main-light);
+  transition: all 0.7s ease-in-out;
+}
+.navbar .navbar-brand:hover {
+  transform: scale(1.1);
+}
+/* SEARCH SECTION */
+#search-section{
+  background-color: var(--main-light);
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  border-radius: 15px;
+}
+#search-section h1, #buffyresults #episode-title {
+  font-family: 'buffied', sans-serif !important;
+  color: var(--main-dark);
+  font-size: 4rem;
+}
+#search-section input {
+  width: 100%;
+  text-align: center;
+}
+/* BUFFY SEARCH RESULTS */
+#buffyresults {
+  background-color: var(--main-light);
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  border-radius: 15px;
+}
+#buffyresults .btn {
+  margin-left: 38%;
+}
+#buffyresults .search-link {
+  color: var(--main-dark);
+  text-decoration: none;
+  transition: all 0.5s ease-in-out ;
+}
+#buffyresults .search-link:hover {
+  color: var(--hover-blue);
+  text-decoration: underline;
+}
+/* BUFFY ALL EPISODES PAGE */
+#buffyEpisodes {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+} 
+#buffyEpisodes .title-section {
+  font-family: 'buffied', sans-serif;
+  color: var(--main-light);
+  font-size: 3.5rem;
+}
+/* FLIP CARD */
+.flip-card {
+  height: 50vh;
+  text-align: center;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-front, .flip-back {
+  position: absolute;
+  backface-visibility: hidden;
+  padding: 2rem;
+  text-align: center;
+}
+.flip-front {
+visibility: show;
+}
+.flip-back {
+  transform: rotateY(180deg);
+}
+.card-title {
+  font-family: 'buffied', sans-serif !important;
+  color: var(--main-dark);
+}
+.card-spacing-2 {
+  margin-top: 4.5rem!important;
+}
+.card-spacing-3 {
+  margin-top: 8rem !important;
+}
+.card-spacing-4 {
+  margin: 0;
+}
+.card-spacing-5 {
+  margin-top: 5.5rem !important;
+  margin-left: 3rem !important;
+}
+.card-spacing-6 {
+  margin-top: 12rem !important;
+  margin-left: 32% !important;
+  padding: 1rem;
+}
+/* PAGINATION */
+.pagination {
+  margin-left: 38%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.page-link {
+  background-color: var(--main-dark);
+  color: var(--main-light);
+}
+.page-link:hover {
+  background-color: var(--hover-blue);
+  color: var(--main-dark);
+}
