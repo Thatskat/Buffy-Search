@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>buffy search</title>
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="./css/desktop.css">
+  <!-- BOOTSTRAP JAVASCRIPT WITH POPPERS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script>
+  <!-- EXTERNAL JS -->
+  <script src="./js/buffy.js" defer></script>
+  <!-- BOOTSTRAP ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- FAVICON -->
+  <link rel="icon" type="icon/x-icon" href="./icon/buffy-js-logo.svg">
+</head>
+<body>
+<!-- NAVBAR START -->
+<nav class="navbar navbar-expand-lg p-3">
+  <div class="container-fluid">
+    <a class="navbar-brand fs-1" href="./index.html">buffy search</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./season-eps.html">seasons and episodes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.imdb.com/title/tt0118276/?ref_=nv_sr_srsg_0" target="_blank">buffy imdb page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact-us.html">contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+
+<!-- SEARCH SECTION START -->
+  <section id="search-section" class="p-5 w-50 m-auto mt-5 text-center">
+    <h1>buffy search</h1>
+    <p>search all your favourite episodes </p>
+        <label for="season">select your season</label>
+        <input type="number" class="form-control" id="buffyseason" min="1" max="7">
+        <label for="episode">select an episode</label>
+        <input type="number" class="form-control" id="buffyepisode" min="1" max="22">
+    <button class="btn mt-4" id="buffybtn">search for episode</button>
+  </section>
+<!-- SEARCH SECTION END -->
+    <!-- ERROR MESSAGE START-->
+    <section id="errormessage" class="alert alert-warning">
+      <p>oh no... something went wrong try again</p>
+    </section>
+    <!-- ERROR MESSAGE END -->
+    
+    <!-- EPISODE SEARCH RESULTS START -->
+    <section id="buffyresults" class="w-50 p-5 m-auto mt-4">
+    <p class="text-center">your search has returned...</p>
+    <h1 id="episode-title" class="text-center"></h1>
+    <h2 id="season-ep" class="text-center fs-4"></h2>
+    <p id="airdate" class="mt-3"></p>
+    <p id="director"></p>
+    <p id="plot"></p>
+    <p id="ep-quote"></p>
+    <p id="ep-trivia"></p>
+    <a href="" target="_blank" id="imdb-link" class="btn mt-4">imdb episode link</a>
+    <p class="text-center mt-3">return to <a href="./index.html" class="search-link">search</a></p>
+    </section>
+    <!-- EPISODE SEARCH RESULTS END -->
+
+<canvas id="Granim"></canvas>
+
+<!-- FOOTER START -->
+<footer id="mainFooter">
+  <p>buffy search &copy; 2022</p>
+  <p>created by kat gill</p>
+</footer>
+<!-- FOOTER END -->
+
+  <!-- COLOR CHANGE JS -->
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.js"></script>
+<script type="text/javascript" src="./js/colorchange.js"></script>
+</body>
+</html>
