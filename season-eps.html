@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>buffy search</title>
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="./css/desktop.css">
+  <!-- BOOTSTRAP JAVASCRIPT WITH POPPERS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script>
+  <!-- EXTERNAL JS -->
+  <script src="./js/buffy.js" defer></script>
+  <script src="./js/buffyAllEpisodes.js" defer></script>
+  <!-- BOOTSTRAP ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- FAVICON -->
+  <link rel="icon" type="icon/x-icon" href="./icon/buffy-js-logo.svg">
+</head>
+<body id="backgroundChange">
+<!-- NAVBAR START -->
+<nav class="navbar navbar-expand-lg p-3">
+  <div class="container-fluid">
+    <a class="navbar-brand fs-1" href="./index.html">buffy search</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./season-eps.html">seasons and episodes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.imdb.com/title/tt0118276/?ref_=nv_sr_srsg_0" target="_blank">buffy imdb page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact-us.html">contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+
+<!-- ALL BUFFY EPISODES START -->
+<section id="buffyEpisodes" class="text-center">
+  <h1 class="text-center mt-5 title-section">here are all the episodes of buffy</h1>
+  <!-- PAGINATION START -->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item"><button class="page-link" id="prevBtn">Previous</button></li>
+      <li class="page-item"><button class="page-link" id="season1Btn">1</button></li>
+      <li class="page-item"><button class="page-link" id="season2Btn">2</button></li>
+      <li class="page-item"><button class="page-link" id="season3Btn">3</button></li>
+      <li class="page-item"><button class="page-link" id="season4Btn">4</button></li>
+      <li class="page-item"><button class="page-link" id="season5Btn">5</button></li>
+      <li class="page-item"><button class="page-link" id="season6Btn">6</button></li>
+      <li class="page-item"><button class="page-link" id="season7Btn">7</button></li>
+      <li class="page-item"><button class="page-link" id="nextBtn">Next</button></li>
+    </ul>
+  </nav>
+  <!-- PAGINATION END -->
+  <div id="errorMessageEpisode">This is an error</div>
+  <div id="results"></div>
+</section>
+<!-- ALL BUFFY EPISODES END -->
+
+<canvas id="Granim"></canvas>
+<!-- FOOTER START -->
+<footer id="mainFooter">
+  <p>buffy search &copy; 2022</p>
+  <p>created by kat gill</p>
+</footer>
+<!-- FOOTER END -->
+
+  <!-- COLOR CHANGE JS -->
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.js"></script>
+<script type="text/javascript" src="./js/colorchange.js"></script>
+</body>
+</html>
