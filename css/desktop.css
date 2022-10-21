@@ -10,11 +10,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* CANVAS COLOR CHANGE CSS */
 #Granim {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+.overall-bg {
+  background-color: var(--main-dark);
+}
+svg {
+  position: fixed;
+  bottom: 0cm;
+
 }
 /* BTN */
 .btn {
@@ -32,6 +41,7 @@
 .navbar .navbar-nav .nav-item a {
   color: var(--main-light);
   transition: all 0.5s ease-in-out;
+  padding: 1rem;
 }
 .navbar .navbar-nav .nav-item a:hover {
   transform: scale(1.02);
@@ -40,6 +50,7 @@
   font-family: 'buffied', sans-serif !important;
   color: var(--main-light);
   transition: all 0.7s ease-in-out;
+  padding-left: 4rem;
 }
 .navbar .navbar-brand:hover {
   transform: scale(1.1);
@@ -93,6 +104,10 @@
   font-size: 3.5rem;
 }
 /* FLIP CARD */
+#results {
+  width: 90%;
+  margin: auto;
+}
 .flip-card {
   height: 50vh;
   text-align: center;
@@ -134,7 +149,7 @@ visibility: show;
 }
 .card-spacing-5 {
   margin-top: 5.5rem !important;
-  margin-left: 3rem !important;
+  margin-left: 1rem !important;
 }
 .card-spacing-6 {
   margin-top: 12rem !important;
@@ -155,3 +170,50 @@ visibility: show;
   background-color: var(--hover-blue);
   color: var(--main-dark);
 }
+/* CONTACT US SECTION */
+#contactUs {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+#contactUs h1 {
+  font-family: 'buffied', sans-serif !important;
+  text-align: center;
+  color: var(--main-light);
+  font-size: 3.5rem;
+}
+#contactUs p {
+  color: var(--main-light);
+}
+#contactUs .row {
+  gap: 3rem;
+  width: 90%;
+  margin: auto;
+}
+#contactUs .col {
+  background-color: var(--main-light);
+  border-radius: 15px;
+}
+#contactUs .col h4 {
+  color: ver(--main-dark);
+  font-family: 'buffied', sans-serif !important;
+  font-size: 2rem;
+  text-align: center;
+}
+#contactUs .col ul {
+  list-style: none;
+}
+#contactUs .col ul li {
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+}
+#contactUs .col ul li a {
+  color: var(--main-dark);
+  text-decoration: none;
+}
+#contactUs .col ul li a:hover {
+  color: var(--hover-blue);
+  text-decoration: underline;
+}
+
