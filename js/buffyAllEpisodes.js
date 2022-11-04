@@ -1,3 +1,4 @@
+// Error messages and results section from seasons-eps.html
 const results = document.getElementById('results');
 const errorMessageEpisode = document.getElementById('errorMessageEpisode');
 
@@ -17,6 +18,16 @@ errorMessageEpisode.style.display = 'none';
 
 let seasonNumber = 1;
 let totalEpisodes;
+
+/**
+ * 
+ * @param {*} seasonNumber - When button with season is clicked, that season's episodes will all appear
+ * 
+ * loadEpisodes() - returns the episodes of the specified buffy season, then displays data in results section
+ * 
+ * @returns {object} - JSON objects containing the specified season's episodes data is returned
+ * 
+ */
 
 async function loadEpisodes(seasonNumber) {
   const buffyEpsLink = await fetch(`${episodeApi}${seasonNumber}`);
@@ -74,6 +85,12 @@ results.appendChild(flipCard);
 
 loadEpisodes();
 
+
+/**
+ * async function() - defines the season number
+ * 
+ * @returns {string} - the number of the specified season
+ */
 prevBtn.addEventListener('click', async function(e) {
   if(seasonNumber == 1) {
     prevBtn.style.display = 'none';
