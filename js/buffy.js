@@ -22,7 +22,36 @@ const apiSeason = "/season/";
 errorMessage.style.display = 'none';
 searchResults.style.display = 'none';
 
-buffySearchBtn.addEventListener('click', Search);
+buffySearchBtn.addEventListener('click', validateForm);
+
+
+function validateForm(){
+  let seasonNumber = buffySeason.value;
+  let episodeNumber = buffyEpisode.value;
+  if(seasonNumber == "" && episodeNumber == ""){
+    alert("both the season and episode fields MUST be filled out!")
+  }
+  else if(seasonNumber == ""){
+    alert("the season number MUST be filled out!");
+    return false;
+  }
+  else if(episodeNumber == ""){
+    alert("the episode number MUST be filled out!");
+    return false;
+  }else if(seasonNumber == "1" && episodeNumber > 12){
+    alert("season one only has 12 episodes! pick an episode number between 1 and 12");
+    return false;
+  } else if(seasonNumber > 7){
+    alert("there are only 7 seasons of buffy!");
+    return false;
+  } else if(seasonNumber > 1 && seasonNumber < 8 && episodeNumber > 22){
+    alert("there are only 22 episodes in a season of buffy!")
+    return false;
+  }
+  else {
+    Search()
+  }
+}
 
 function Search() {
   const seasonValue = buffySeason.value;
