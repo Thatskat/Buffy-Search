@@ -51,7 +51,7 @@ let seasonEpPlot = document.createElement('p');
 flipCard.className = 'flip-card d-inline-block mb-3 me-3'
 col.className = 'card season-ep-results flip-card-inner';
 
-titleArea.className = 'flip-front card-title card-spacing-1 fs-1';
+titleArea.className = 'flip-front card-title card-spacing-1 fs-2';
 seasonEpNumber.className = 'flip-front card-text card-spacing-2 fs-4';
 seasonEpPlot.className = 'flip-front card-text card-spacing-3';
 
